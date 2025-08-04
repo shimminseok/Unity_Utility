@@ -40,3 +40,11 @@ public class Bullet : MonoBehaviour, IPoolObject
     public void OnSpawnFromPool() { /* 초기화 코드 */ }
     public void OnReturnToPool() { /* 정리 코드 */ }
 }
+```
+
+---
+
+##💡 특징
+- 인터페이스 기반 확장성: 어떤 오브젝트든 간단한 구현만으로 풀링 대상 등록 가능
+- 자동 풀 생성 지원: Editor에서 Prefab을 자동 등록하여 반복 작업 감소
+- 씬 기반 싱글톤 구조: 전역 사용 가능하지만 씬 전환에 따라 리셋됨
