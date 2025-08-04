@@ -19,18 +19,7 @@ public class HPBarUI : MonoBehaviour, IPoolObject
     [SerializeField] private Image damagedImage;
     [SerializeField] private Image separator;
     [SerializeField] private Vector3 offset;
-
-    [SerializeField] private TextMeshProUGUI speedText;
-
-    [Header("감정 슬롯")]
-    [SerializeField] private GameObject joySlot;
-
-    [SerializeField] private GameObject angerSlot;
-    [SerializeField] private GameObject depressionSlot;
-
-    private TextMeshProUGUI joyText;
-    private TextMeshProUGUI angerText;
-    private TextMeshProUGUI depressionText;
+    
     private Unit unit;
 
     public GameObject GameObject => gameObject;
@@ -44,9 +33,7 @@ public class HPBarUI : MonoBehaviour, IPoolObject
     private int emotionCount = 0;
 
     private StatManager statManager;
-    private CalculatedStat speedStat;
-
-
+    
     private float curShield;
 
     public float RectWidth = 100f;
